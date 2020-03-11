@@ -1,6 +1,8 @@
 FROM node:13-alpine
+RUN mkdir /react
+WORKDIR /react
 
-COPY . .
+COPY . /react
 
 RUN npm install
 

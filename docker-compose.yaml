@@ -1,0 +1,6 @@
+services:
+  react: 
+    image: nadavspi/react-docker-test:latest
+    volumes: .:/react
+    ports: 
+      - "3000:3000"
