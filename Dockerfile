@@ -2,7 +2,7 @@ FROM node:13-alpine
 RUN mkdir /react
 WORKDIR /react
 
-COPY . /react
+COPY . .
 
 RUN npm install
 

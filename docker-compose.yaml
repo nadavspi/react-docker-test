@@ -1,6 +1,12 @@
-services:
+version: "3.7"
+
+services: 
   react: 
-    image: nadavspi/react-docker-test:latest
-    volumes: .:/react
+    command: 
+      - npm
+      - start
+    image: "nadavspi/react-test:0.2.0"
     ports: 
       - "3000:3000"
+    volumes: 
+      - ".:/react"
